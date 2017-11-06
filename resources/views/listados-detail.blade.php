@@ -1,0 +1,49 @@
+@extends('layouts.master')
+@section('content')
+    <section class="ruta py-1" id="inicia">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-xs-right">
+                    <a href="/">Inicio</a> » <a href="/listados">Listados</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-1" id="">
+        <div class="Listados padding-row">
+            <div class="container">
+                <div class="row">
+                    <div class="col margin-bottom">
+                        <h1 class="title">
+                            Listado titulo
+                        </h1>
+                        <p class="description  lead">titulo</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col margin-bottom">
+                        <div class="row padding" ng-repeat="listado in listados">
+                            <div class="col">
+                                <div class="media">
+                                    <div class="media-left">
+                                        {{--  <a ng-href="/listados/{{listado.titulo | slugify}}/{{listado.id}}">  --}}
+                                        <a ng-href="/listados/listado.titulo | slugify/listado.id">
+                                        {{--  <img class="media-object" ng-src="{{listado.src}}" alt="{{listado.titulo}}">  --}}
+                                        {{--  <img class="media-object" ng-src="{{listado.src}}" alt="listado.titulo">  --}}
+                                        <img class="media-object" ng-src="listado.src" alt="listado.titulo">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">listado.titulo</h4>
+                                        listado.descripcion
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+@endsection
