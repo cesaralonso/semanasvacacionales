@@ -83,6 +83,11 @@ function makeAsocArray($object, $firstParam, $secondParam)
     return $array;
 }
 
+function public_path_sv()
+{
+    return '/home/wwwsemanasvacaci/public_html/';
+}
+
 function emailForVerification($id, $email, $verifyLink)
 {
     return '

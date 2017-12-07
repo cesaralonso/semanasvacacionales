@@ -52,7 +52,7 @@
                                 <input id="image-{{ $key }}" type="hidden" value="{{ pv($image, 'id')}}">                            
                                 <div class="thumbnail">
                                     <a href=""  data-toggle="modal" data-target=".bd-example-modal-md-{{ $key }}">
-                                        <img style="width:100%;" src="{{$_ENV['UPLOAD_FOLDER']}}/membresias-images/thumbs/{{ $image->src }}"/> 
+                                        <img style="width:100%;" src="{{public_path_sv() . $_ENV['UPLOAD_FOLDER']}}/membresias-images/thumbs/{{ $image->src }}"/> 
                                     </a>
                                     <div id="topDescription-{{$key}}" class="caption gradient pb-1">
                                         {{ str_limit( pv($image, 'descripcion'), 50)}}
@@ -71,7 +71,7 @@
                                             </div>
                                         </div>
                                          <div class="modal-body">
-                                            <img style="width:100%;"src="{{$_ENV['UPLOAD_FOLDER']}}/membresias-images/{{ $image->src }}"/>                                         
+                                            <img style="width:100%;"src="{{public_path_sv() . $_ENV['UPLOAD_FOLDER']}}/membresias-images/{{ $image->src }}"/>                                         
                                             <div class="mt-1">
                                                 <div class="container">
                                                     <div class="row">

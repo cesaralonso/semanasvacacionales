@@ -358,6 +358,7 @@ class MembresiaController extends Controller
             }
             // Get the instance to make HTTP Requests        
             $client = getClient();
+
             foreach($post_image as $key => $image ) {
                 $filename = $request->membresiaTitulo . '-' .time(). '-'. $key . '.' . $image->getClientOriginalExtension();
                 $description = $request->{'descripcion-'.$key} || 'Sin descripcion';
@@ -366,14 +367,14 @@ class MembresiaController extends Controller
                 Image::make($image)->resize(1900, null, function ($constraint) {
                     $constraint->aspectRatio();
                     $constraint->upsize();
-                })->save( public_path('/'.$_ENV['UPLOAD_FOLDER'].'/membresias-images/') . $filename);
+                })->save( public_path_sv() . $_ENV['UPLOAD_FOLDER'].'/membresias-images/' . $filename);
     
                 // Save image in thumb folder giving it 300 for height and auto width
                 Image::make($image)->resize(300, null, function ($constraint) {
                     $constraint->aspectRatio();
                     $constraint->upsize();
-                })->save( public_path('/'.$_ENV['UPLOAD_FOLDER'].'/membresias-images/thumbs/') . $filename);    
-                
+                })->save( public_path_sv() . $_ENV['UPLOAD_FOLDER'].'/membresias-images/thumbs/' . $filename);    
+
                 //Make POST to API and save image information
                 try {
                     $response = Membresia::setImage($client, $request, Session::get('ACCESS_TOKEN'), $filename, 'thumb', $description );
