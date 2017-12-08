@@ -18,10 +18,10 @@
                             <div class="jumbotron" style="padding: 2rem;">
                                 <h1 class="display-3 hidden-xs-down pb-1">¡Promociones!</h1>
                                 <h1 class="hidden-sm-up pb-1">¡Promociones!</h1>
-                                <p c<lass="lead"><strong>Importante: </strong> La informacion contenida en las publicaciones ni es confirmada ni autorizada por <a href="http://www.tiempocompartido.com">tiempocompartido.com</a>. La confirmacion de la informacion publicada o adjunta es responsabilidad de la persona contratante o Usuario.</p>
+                                <p c<lass="lead"><strong>Importante: </strong> La informacion contenida en las publicaciones ni es confirmada ni autorizada por <a href="http://www.semanasvacacionales.com">semanasvacacionales.com</a>. La confirmacion de la informacion publicada o adjunta es responsabilidad de la persona contratante o Usuario.</p>
                                 <p>Las respuestas a los comentarios de los Usuarios es responsabilidad exclusiva del Anunciante..</p>
                                 <footer class="text-right">
-                                    <small class="blockquote-footer">tiempocompartido.com</small>
+                                    <small class="blockquote-footer">Semanas Vacacionales</small>
                                 </footer>
                             </div>
                         </div>

@@ -170,7 +170,7 @@ class MembresiaController extends Controller
             $renta = isset($membresia->renta) ? $membresia->renta : false;
             $venta = isset($membresia->venta) ? $membresia->venta : false;
 
-            $response = Membresia::getMembresiasRelacionadas(getClient(), $membresia->paisNombre, $renta, $venta, $membresia->ubicadoEn);
+            $response = Membresia::getMembresiasRelacionadas(getClient(), pv($membresia, 'paisNombre'), $renta, $venta, $membresia->ubicadoEn);
             
         } catch (RequestException $e) {
             // In case something went wrong it will redirect to /
@@ -362,7 +362,8 @@ class MembresiaController extends Controller
             foreach($post_image as $key => $image ) {
                 $filename = $request->membresiaTitulo . '-' .time(). '-'. $key . '.' . $image->getClientOriginalExtension();
                 $description = $request->{'descripcion-'.$key} || 'Sin descripcion';
-            
+                
+               
                 // Save image in original size without oversized up to 1900
                 Image::make($image)->resize(1900, null, function ($constraint) {
                     $constraint->aspectRatio();
@@ -374,7 +375,9 @@ class MembresiaController extends Controller
                     $constraint->aspectRatio();
                     $constraint->upsize();
                 })->save( public_path_sv() . $_ENV['UPLOAD_FOLDER'].'/membresias-images/thumbs/' . $filename);    
-
+                chmod(public_path_sv() . $_ENV['UPLOAD_FOLDER'].'/membresias-images/thumbs/' . $filename, 0755);
+                chmod(public_path_sv() . $_ENV['UPLOAD_FOLDER'].'/membresias-images/' . $filename, 0755);
+                
                 //Make POST to API and save image information
                 try {
                     $response = Membresia::setImage($client, $request, Session::get('ACCESS_TOKEN'), $filename, 'thumb', $description );

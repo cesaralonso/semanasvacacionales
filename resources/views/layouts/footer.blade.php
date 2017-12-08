@@ -1,8 +1,8 @@
 <footer class="Footer">
     <div class="container margin-bottom-sm">
         <div class="row">
-            <div class="col-md-4">
-                <div class="Footer__Title">
+            <div class="col-md-3">
+                {{--  <div class="Footer__Title">
                     <h4 class="title">Listados Más Buscados</h4>
                 </div>
                 <div class="Footer__Content">
@@ -16,7 +16,7 @@
                     <p>
                         <a href="/listados" class="btn btn-info">Listados de tiempos compartidos</a>
                     </p>
-                </div>
+                </div>  --}}
             </div>
             <div class="col-md-6">
                 <div class="Footer__Title">
@@ -52,11 +52,9 @@
 
 <footer class="piedepagina py-1" role="contentinfo">
     <div class="container">
-        <p>2017 © Tiempo Compartido Todos los derechos reservados</p>
+        <p>2018 © Semanas Vacaciones Todos los derechos reservados</p>
         <ul class="redes-sociales">
             <li><a href="https://www.facebook.com/tiempo.compartido.original"><i class="fa fa-facebook" aria-hidden="true"> </i> </a></li>
-            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> </a></li>
-            <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i> </a></li>
         </ul>
     </div>
 </footer>

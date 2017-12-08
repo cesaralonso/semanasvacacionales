@@ -102,7 +102,7 @@
         <div class="Latest padding-row">
             <div class="container">
                 <h3 class="Latest__title pb-1 text-center tiempo-title">
-                    Tiempos Compartidos ¡RECOMENDADOS!
+                    Semanas Vacacionales ¡RECOMENDADAS!
                 </h3>
                 <div class="tiempo-line-bottom-container margin-bottom">
                     <span class="tiempo-line-bottom"></span>
@@ -226,12 +226,12 @@
                 <div class="About__Content">
                     <div class="About__Img">
                         <figure class="img">
-                            <img src="assets/img/logo_nw.png" alt="www.tiempocompartido.com">
+                            <img src="assets/img/logo_nw_sv.png" alt="www.tiempocompartido.com">
                         </figure>
                     </div>
                     <div class="About__Comment">
                         <p class="text margin-bottom">
-                            Somos una empresa que pone a tu disposición un medio para la libre difusión de propiedades y tiempos compartidos en 
+                            Somos una empresa hermana a <a href="http://www.tiempocompartido.com/">tiempos compartidos </a>, que pone a tu disposición un medio para la libre difusión de propiedades y tiempos compartidos en 
                             venta y renta entre usuarios vacacionistas, sin comisiones ni intermediarios, 
                             ¡Consigue el mejor precio para tus vacaciones!.
                         </p>

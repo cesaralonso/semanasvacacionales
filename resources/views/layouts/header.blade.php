@@ -1,8 +1,8 @@
 <header class="encabezado navbar-fixed-top" role="banner" id="encabezado">
     <div class="container">
         <a href="/" class="logo text-white" style="text-decoration:none">
-            <span class="hidden-md-up"><figure class="img"><img src="assets/img/logo_nb.png" alt="www.tiempocompartido.com"></figure></span>
-            <span class="hidden-md-down"><figure class="img"><img src="assets/img/logo_nw.png" alt="www.tiempocompartido.com"></figure></span>
+            <span class="hidden-md-up"><figure class="img"><img src="assets/img/logo_nw_sv.png" alt="www.tiempocompartido.com"></figure></span>
+            <span class="hidden-md-down"><figure class="img"><img src="assets/img/logo_nw_sv.png" alt="www.tiempocompartido.com"></figure></span>
         </a>
         <button type="button" class="boton-buscar hidden-md-up" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false">
             <i class="fa fa-bars" aria-hidden="true"></i></button>
@@ -56,8 +56,8 @@
                             Ahorra en el costo de tus próximas vacaciones familiares.
                             Conoce las ventajas y experiencias de los mismos propietarios y sus familias.
                         </ul>
-                        <a class="hidden-sm-down btn btn-lg btn-primary mt-1" href="/rentas/tiempos-compartidos-en-renta/0/2" role="button">Tiempos Compartidos en Alquiler</a>
-                        <a class="hidden-md-up btn btn-lg btn-primary mt-1" style="font-size: .9rem;" href="/rentas/tiempos-compartidos-en-renta/0/2" role="button">Tiempos Compartidos en Alquiler</a>
+                        <a class="hidden-sm-down btn btn-lg btn-primary mt-1" href="/rentas/tiempos-compartidos-en-renta/0/2" role="button">Semanas Vacacionales en Alquiler</a>
+                        <a class="hidden-md-up btn btn-lg btn-primary mt-1" style="font-size: .9rem;" href="/rentas/tiempos-compartidos-en-renta/0/2" role="button">Semanas Vacacionales en Alquiler</a>
                     {{--  </div>                
                 </div>                  --}}
             </div>
@@ -75,8 +75,8 @@
                 <li>Sin intermediación ni pagar comisiones. Trato directo con los propietarios.</li>
                 <li>Negocia el mejor precio.</li>
               </ul> 
-              <a class="hidden-sm-down btn btn-lg btn-primary mt-1" href="/ventas/tiempos-compartidos-en-venta/0/2" role="button">Tiempos Compartidos en Venta</a>
-              <a class="hidden-md-up btn btn-lg btn-primary mt-1" style="font-size: .9rem;"  href="/ventas/tiempos-compartidos-en-venta/0/2" role="button">Tiempos Compartidos en Venta</a>
+              <a class="hidden-sm-down btn btn-lg btn-primary mt-1" href="/ventas/tiempos-compartidos-en-venta/0/2" role="button">Semanas Vacacionales en Venta</a>
+              <a class="hidden-md-up btn btn-lg btn-primary mt-1" style="font-size: .9rem;"  href="/ventas/tiempos-compartidos-en-venta/0/2" role="button">Semanas Vacacionales en Venta</a>
               
             </div>
           </div>
@@ -107,7 +107,7 @@
                 <h1 class="hidden-sm-down display-4">Promueve tu programa Fly&Buy o Net-Center</h1>
                 <h1 class="hidden-md-up">Promueve tu programa Fly&Buy o Net-Center</h1>
                 <ul class="hidden-sm-down" class="mt-1 text-right" style="list-style-type: none;">
-                     <li>Clientes reales e interesados en Tiempos Compartidos.</li>
+                     <li>Clientes reales e interesados en Semanas Vacacionales.</li>
                      <li>Banners, links, encuestas de perfil y pre-calificación.</li>
                      <li>Exposición inigualable en la red! Más de 78,000 visitas los últimos 12 meses!</li>
                      <li>Desde 1998, promoviendo la industria uniendo Vacacionistas y Propietarios.</li>

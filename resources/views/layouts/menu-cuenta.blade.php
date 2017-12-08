@@ -3,7 +3,7 @@
 </h1>
 <div class="list-group">
     <a class="list-group-item tiempocompartido-list">
-        Tus opciones en tiempo compartido
+        Tus opciones en Semanas Vacacionales
     </a>
     
     <a href="/mis-datos" class="list-group-item list-group-item-action tiemplocompartido-list-active {{ \Request::is('mis-datos') ? 'active': ''}}"><i class="fa fa-user"></i> Mis datos</a>

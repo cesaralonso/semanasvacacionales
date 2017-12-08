@@ -1,5 +1,5 @@
 var endPoint = window.location.hostname == 'localhost' ? 'http://0.0.0.0:3000/api/' : 'http://tiempocompartidolb.herokuapp.com/api/';
-var uploadFolder = window.location.hostname == 'localhost' ? 'uploads' : 'server-upload';
+var uploadFolder = window.location.hostname == 'localhost' ? 'uploads' : 'server-uploads';
 function setDescription(imageNumber) {
     var id = $('#image-' + imageNumber).val();
     var description = $('#modif-descripcion-' + imageNumber).val();
@@ -18,77 +18,6 @@ function setDescription(imageNumber) {
         }
     })
 }
-
-// function setFavorito(membresiaId, userId, isFavorito) {
-//     var method;
-//     var color;
-//     var message;
-//     var toastStatus;
-//     // Mandar un request a la API sabiendo si el usario tiene favorito a esa membresia
-//     // Si sí lo tiene: hacer method DELETE
-//     // Si no lo tiene: hacer method POST
-//     // Problema: no hay un metodo en la API para obtener la relacion si hay un favorito entre la persona y la membresia 
-//     getFavoritosByIdUser(userId, function(error, favoritos) {
-//         favoritos.forEach(function(favorito) {
-//             // Es favorito y se debe eliminar
-//             if(favorito.idMembresia == membresiaId) {
-//                 $.ajax({
-//                     type: 'DELETE',
-//                     url: `${endPoint}People/${userId}/favoritos/${favorito.id}`,
-//                     success: function (data) {
-//                         console.log(data);
-//                         makeToast('Favorito', 'Ha sido quitado de favoritos', 'SUCCESS');
-//                     },
-//                     error: function(xhr, status, error) {
-//                         makeToast('Error','Ha ocurrido un error, vuelva a intentarlo.', 'WARNING');
-//                     }
-//                 });
-//                 break;
-//             } else { // No es favorito y se debe eliminar
-//                 $.ajax({
-//                     type: 'POST',
-//                     url: `${endPoint}People/${userId}/favoritos`,
-//                     success: function (data) {
-//                         console.log(data);
-//                         makeToast('Favorito', 'Guardado en favoritos', 'SUCCESS');
-//                     },
-//                     error: function(xhr, status, error) {
-//                         makeToast('Error','Ha ocurrido un error, vuelva a intentarlo.', 'WARNING');
-//                     }
-//                 });
-//                 break;
-//             }
-//         });
-//     });
-//     // if (isFavorito) {
-//     //     method = 'DELETE';
-//     //     color = 'gray';
-//     //     message = 'Eliminado de favoritos';
-//     //     toastStatus = 'WARNING';
-//     // } else {
-//     //     method = 'POST';
-//     //     color = 'red';
-//     //     message = 'Agregado a favoritos';
-//     //     toastStatus = 'SUCCESS';
-//     // }
-
-//     // $.ajax({
-//     //     type: method,
-//     //     url: `${endPoint}People/${userId}/favoritos`,
-//     //     data: {
-//     //         idMembresia : membresiaId
-//     //     },
-//     //     success: function (data) {
-//     //         console.log(color);
-//     //         $('favoritos-heart').css('color', color);
-//     //         makeToast('Favorito', message, toastStatus);
-//     //     },
-//     //     error: function(xhr, status, error) {
-//     //         makeToast('Error','Ha ocurrido un error, vuelva a intentarlo.', 'WARNING');
-//     //     }
-//     // });
-    
-// }
 
 function getFavoritosByIdUser(userId, cb) {
     $.ajax({

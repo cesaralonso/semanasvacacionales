@@ -44,7 +44,7 @@
                         <div class="col-md-6">
                         <blockquote class="blockquote blockquote-reverse">
                             <p class="mb-0"> {{ $promocion->descripcion }} </p>
-                            <footer class="blockquote-footer">Promociones en <cite title="tiempocompartido.com"><a href="http://www.tiempocompartido.com">tiempocompartido.com</a></cite></footer>
+                            <footer class="blockquote-footer">Promociones en <cite title="semanasvacacionales.com"><a href="http://www.semanasvacacionales.com">semanasvacacionales.com</a></cite></footer>
                         </blockquote>
                         </div>
                     </div>
