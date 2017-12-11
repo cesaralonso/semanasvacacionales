@@ -111,29 +111,31 @@
                     <div class="owl-carousel owl-theme">
                         @if( isset($destacados) )
                             @foreach($destacados as $destacado)
-                                <div class="Card">
-                                    <a href="/membresia/tiempo-compartido-en-{{ slugify( pv($destacado->membresia, 'localidadNombre') ) }}-{{ slugify( pv($destacado->membresia, 'clubNombre') ) }}-{{ slugify( pv($destacado->membresia, 'paisNombre') ) }}/{{ pv($destacado->membresia, 'id') }}">   
-                                        <div class="Card__Image">
-                                            <img src="{{ isset($destacado->membresia->imagenes[0]->src) ?  $_ENV['UPLOAD_FOLDER'].'/membresias-images/thumbs/' . $destacado->membresia->imagenes[0]->src : 'assets/img/sin-imagen-land.jpg' }}" alt="imagen"> 
-                                        </div>
-                                    </a>
-                                    <div class="Card__Content">
-                                        <h4 class="Card__Content__Title">
-                                            {{ pv($destacado->membresia,'titulo') }}
-                                        </h4>
-                                        <p  class="Card__Content__Description">
-                                            {{ pv($destacado->membresia,'precioRenta') }}
-                                        </p>
-                                        <p  class="Card__Content__Description">
-                                            {{ pv($destacado->membresia,'precioVenta') }}
-                                        </p>
-                                        <div class="Card__Actions no-padding-sides text-right">
-                                            <a  class="btn btn-primary-outline" href="/membresia/tiempo-compartido-en-{{ slugify( pv($destacado->membresia, 'localidadNombre') ) }}-{{ slugify( pv($destacado->membresia, 'clubNombre') ) }}-{{ slugify( pv($destacado->membresia, 'paisNombre') ) }}/{{ pv($destacado->membresia, 'id') }}">
-                                                {{ pv($destacado->membresia,'clubNombre') }}
-                                            </a>
+                                @if(isset($destacado->membresia))
+                                    <div class="Card">
+                                        <a href="/membresia/tiempo-compartido-en-{{ slugify( pv($destacado->membresia, 'localidadNombre') ) }}-{{ slugify( pv($destacado->membresia, 'clubNombre') ) }}-{{ slugify( pv($destacado->membresia, 'paisNombre') ) }}/{{ pv($destacado->membresia, 'id') }}">   
+                                            <div class="Card__Image">
+                                                <img src="{{ isset($destacado->membresia->imagenes[0]->src) ?  $_ENV['UPLOAD_FOLDER'].'/membresias-images/thumbs/' . $destacado->membresia->imagenes[0]->src : 'assets/img/sin-imagen-land.jpg' }}" alt="imagen"> 
+                                            </div>
+                                        </a>
+                                        <div class="Card__Content">
+                                            <h4 class="Card__Content__Title">
+                                                {{ pv($destacado->membresia,'titulo') }}
+                                            </h4>
+                                            <p  class="Card__Content__Description">
+                                                {{ pv($destacado->membresia,'precioRenta') }}
+                                            </p>
+                                            <p  class="Card__Content__Description">
+                                                {{ pv($destacado->membresia,'precioVenta') }}
+                                            </p>
+                                            <div class="Card__Actions no-padding-sides text-right">
+                                                <a  class="btn btn-primary-outline" href="/membresia/tiempo-compartido-en-{{ slugify( pv($destacado->membresia, 'localidadNombre') ) }}-{{ slugify( pv($destacado->membresia, 'clubNombre') ) }}-{{ slugify( pv($destacado->membresia, 'paisNombre') ) }}/{{ pv($destacado->membresia, 'id') }}">
+                                                    {{ pv($destacado->membresia,'clubNombre') }}
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                @endif
                             @endforeach
                         @endif
                     </div>

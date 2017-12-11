@@ -11,22 +11,24 @@
         @if( isset($destacados[0]) )
             <div class="row">
                     @foreach( $destacados as $index => $destacado )
-                        <div class="col-md-4" style="max-width:100%;">
-                            <div class="card">
-                                @if( isset($destacado->membresia->imagenes[0]->src) )
-                                    <img src="{{$_ENV['UPLOAD_FOLDER']}}/membresias-images/thumbs/{{ $destacado->membresia->imagenes[0]->src }}" style="width: 100%;"> 
-                                @else
-                                    <img src="assets/img/sin-imagen-land.jpg" style="width: 100%;">                         
-                                @endif
-                                <div class="card-block">
-                                    <h4 class="card-title">{{ pv($destacado->membresia, 'titulo') }}</h4>
-                                    <p class="card-text">{{ pv($destacado->membresia, 'descripcion') }}</p>
-                                    <a  class="btn btn-primary-outline" href="/membresia/tiempo-compartido-en-{{ slugify( pv($destacado->membresia, 'localidadNombre') ) }}-{{ slugify( pv($destacado->membresia, 'clubNombre') ) }}-{{ slugify( pv($destacado->membresia, 'paisNombre') ) }}/{{ pv($destacado->membresia, 'id') }}">
-                                        Ver membresia
-                                    </a>
+                        @if(isset($destacados->membresia))
+                            <div class="col-md-4" style="max-width:100%;">
+                                <div class="card">
+                                    @if( isset($destacado->membresia->imagenes[0]->src) )
+                                        <img src="{{$_ENV['UPLOAD_FOLDER']}}/membresias-images/thumbs/{{ $destacado->membresia->imagenes[0]->src }}" style="width: 100%;"> 
+                                    @else
+                                        <img src="assets/img/sin-imagen-land.jpg" style="width: 100%;">                         
+                                    @endif
+                                    <div class="card-block">
+                                        <h4 class="card-title">{{ pv($destacado->membresia, 'titulo') }}</h4>
+                                        <p class="card-text">{{ pv($destacado->membresia, 'descripcion') }}</p>
+                                        <a  class="btn btn-primary-outline" href="/membresia/tiempo-compartido-en-{{ slugify( pv($destacado->membresia, 'localidadNombre') ) }}-{{ slugify( pv($destacado->membresia, 'clubNombre') ) }}-{{ slugify( pv($destacado->membresia, 'paisNombre') ) }}/{{ pv($destacado->membresia, 'id') }}">
+                                            Ver membresia
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        @endif
                     @endforeach
             </div>
             <div class="row center-pagination">
@@ -36,11 +38,15 @@
                         <a class="page-link" href="{{ $init > 0 ? '/'.$filter.'/'. slugify(pv($destacados[0]->membresia, 'titulo')).'/'. (($final - $pagination ) - $pagination) .'/'. ($final - $pagination ) : '#'}} " tabindex="-1">Atrás</a>
                     </li>
                     @for($index = 0; $index < $paginationNumber; $index ++)
-                        <li class="page-item {{ (($index ) * $pagination) == $init ? 'active' : '' }}"><a class="page-link" href="/{{$filter}}/{{ slugify( pv($destacados[0]->membresia, 'titulo')) }}/{{ ($index ) * $pagination }}/{{ ($index + 1) * $pagination }}">{{ $index + 1 }}</a></li>
+                        @if(isset($destacados->membresia))
+                            <li class="page-item {{ (($index ) * $pagination) == $init ? 'active' : '' }}"><a class="page-link" href="/{{$filter}}/{{ slugify( pv($destacados[0]->membresia, 'titulo')) }}/{{ ($index ) * $pagination }}/{{ ($index + 1) * $pagination }}">{{ $index + 1 }}</a></li>
+                        @endif
                     @endfor
-                    <li class="page-item {{ $final >= ($paginationNumber * $pagination)? 'disabled' : ''}}">
-                        <a class="page-link" href="/{{$filter}}/{{ slugify(pv( $destacados[0]->membresia, 'titulo')) }}/{{ $final }}/{{ $final + $pagination}}">Siguiente</a>
-                    </li>
+                    @if(isset($destacados->membresia))
+                        <li class="page-item {{ $final >= ($paginationNumber * $pagination)? 'disabled' : ''}}">
+                            <a class="page-link" href="/{{$filter}}/{{ slugify(pv( $destacados[0]->membresia, 'titulo')) }}/{{ $final }}/{{ $final + $pagination}}">Siguiente</a>
+                        </li>
+                    @endif
                 </ul>
                 </nav>
             </div>

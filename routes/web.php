@@ -5,7 +5,7 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::post('/searchFromHome', 'HomeController@search');
 
 // SUPER USER
-Route::get('/controlpanel', 'SuperUserController@index');
+Route::get('/controlpanelsv', 'SuperUserController@index');
 Route::get('/su-login', 'SuperUserController@create');
 Route::post('/su-login', 'SuperUserController@store');
 

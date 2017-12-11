@@ -40,12 +40,11 @@ class MembresiaController extends Controller
         }
 
         $countMembresia = json_decode($response->getBody()->getContents())->count;
-        if ( Session::get('USER_TYPE') == 'PROPIETARIO' ) {
+        if ( Session::get('USER_TYPE') == 'PROPIETARIO' && $countMembresia > 0 ) {
             session()->flash('error', 'Solo puedes crear una membresia');
             return Redirect::to('/mis-membresias');
         }
 
-        return var_dump($countMembresia);
 
         $hasUbicados = false;
         $hasUnidades = false;

@@ -868,3 +868,8 @@ EMPIEZAN LAS MEDIAS QUERIES
   filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
+
+.navbar-color {
+  color: #FFF !important;
+  font-weight: 300;
+}

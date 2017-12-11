@@ -60,7 +60,7 @@ class SuperUserController extends Controller
                 'USER_ID'       => $superUser->userId,
                 'SUPER_USER'    => true
             ]);
-           return Redirect::to('/controlpanel');
+           return Redirect::to('/controlpanelsv');
         } 
     }
 }

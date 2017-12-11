@@ -7,7 +7,7 @@
     </a>
     
     <a href="/mis-datos" class="list-group-item list-group-item-action tiemplocompartido-list-active {{ \Request::is('mis-datos') ? 'active': ''}}"><i class="fa fa-user"></i> Mis datos</a>
-    @if( Session::has('USER_TYPE') && Session::get('USER_TYPE') == 'PROPIETARIO')
+    @if( Session::has('USER_TYPE') && (Session::get('USER_TYPE') == 'PROPIETARIO' || Session::get('USER_TYPE') == 'EMPRESA'))
         <a href="/mis-membresias" class="list-group-item list-group-item-action tiemplocompartido-list-active {{ \Request::is('mis-membresias') ? 'active': ''}}"><i class="fa fa-home"></i> Mis membresias</a>
     @endif
     <a href="/mis-favoritos" class="list-group-item list-group-item-action tiemplocompartido-list-active {{ \Request::is('mis-favoritos') ? 'active': ''}}"><i class="fa fa-heart"></i> Mi lista de favoritos</a>

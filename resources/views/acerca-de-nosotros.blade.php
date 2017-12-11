@@ -20,10 +20,10 @@
             </div>
             <div class="col-xs-12 col-md-6 col-lg-6 wow fadeIn">
                 <h1 class="title">
-                    Quienes somos?
+                    ¿Quiénes somos?
                 </h1>
                 <p class="text">
-                    Servicio Libre a Nivel Mundial Sin Intermediacion Para Renta de Tiempo Compartido, Venta de Tiempo Compartido e Intercambio de Tiempo Compartido.<br><br>
+                    Somos una empresa hermana a <a href="http://www.tiempocompartido.com/">Tiempo Compartido</a> que ofrece un servicio libre a nivel mundial sin intermediacion para renta de Semanas Vacacionales, Venta de Semanas Vacacionales e Intercambio de Semanas Vacacionales.<br><br>
                     <blockquote>
                         "Vacaciones Increibles"
                     </blockquote>
@@ -41,9 +41,13 @@
                     Publica sin costo propiedades vacacionales
                 </h1>
                 <p class="text">
-                    Publica tu tiempo compartido o propiedad vacacional sin costo alguno. ¡Aprovecha esta oportunidad!.<br><br>
+                    Publica tu semana vacacional o propiedad vacacional sin costo alguno. ¡Aprovecha esta oportunidad!.<br><br>
                 </p>
-                <a href="/login" class="btn btn-lg btn-success margin-bottom">Publicar propiedades vacacionales</a>
+                @if(Session::has('ACCESS_TOKEN'))
+                    <a href="/mis-membresias" class="btn btn-lg btn-success margin-bottom">Publicar propiedades vacacionales</a>
+                @else
+                    <a href="/login" class="btn btn-lg btn-success margin-bottom">Publicar propiedades vacacionales</a>
+                @endif
             </div>
             <div class="col-xs-12 col-md-6 col-lg-6">
                 <figure class="img wow slideInRight">
@@ -63,9 +67,13 @@
                     Encuentra el mejor lugar para vacacionar
                 </h1>
                 <p class="text">
-                    Experimenta una diferente forma de vacacionar, disfruta de un tiempo compartido en los clubes mas importantes del mundo haciendo trato directo con los propietarios, sin intermediación! consiguiendo los mejores precios!, ¿que esperas?, esta oportunidad es única.<br><br>
+                    Experimenta una diferente forma de vacacionar, disfruta de tu semana vacacional en los clubes mas importantes del mundo haciendo trato directo con los propietarios, sin intermediación! consiguiendo los mejores precios!, ¿que esperas?, esta oportunidad es única.<br><br>
                 </p>
-                <a href="/login" class="btn btn-lg btn-warning">¡Comienza Ahora!.</a>
+                @if( Session::has('ACCESS_TOKEN'))
+                    <a href="/" class="btn btn-lg btn-warning">¡Comienza Ahora!.</a>
+                @else
+                    <a href="/login" class="btn btn-lg btn-warning">¡Comienza Ahora!.</a>                    
+                @endif
             </div>
         </div>
     </div>
