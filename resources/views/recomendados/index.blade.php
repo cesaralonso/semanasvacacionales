@@ -11,7 +11,7 @@
         @if( isset($destacados[0]) )
             <div class="row">
                     @foreach( $destacados as $index => $destacado )
-                        @if(isset($destacados->membresia))
+                        @if(isset($destacado->membresia))
                             <div class="col-md-4" style="max-width:100%;">
                                 <div class="card">
                                     @if( isset($destacado->membresia->imagenes[0]->src) )

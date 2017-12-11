@@ -38,6 +38,7 @@ class DestacadoSearchController extends Controller
         }
 
         $destacados = json_decode($response->getBody()->getContents());
+        // return var_dump($destacados);
         return view('recomendados.index', compact(['recomendados', 'destacados', 'paginationNumber', 'pagination', 'count', 'init', 'final', 'filter']));
     }
 }
