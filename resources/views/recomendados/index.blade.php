@@ -38,7 +38,7 @@
                         <a class="page-link" href="{{ $init > 0 ? '/'.$filter.'/'. slugify(pv($destacados[0]->membresia, 'titulo')).'/'. (($final - $pagination ) - $pagination) .'/'. ($final - $pagination ) : '#'}} " tabindex="-1">Atrás</a>
                     </li>
                     @for($index = 0; $index < $paginationNumber; $index ++)
-                            <li class="page-item {{ (($index ) * $pagination) == $init ? 'active' : '' }}"><a class="page-link" href="/{{$filter}}/{{ slugify( pv($destacados[0]->membresia, 'titulo')) }}/{{ ($index ) * $pagination }}/{{ ($index + 1) * $pagination }}">{{ $index + 1 }}</a></li>
+                        <li class="page-item {{ (($index ) * $pagination) == $init ? 'active' : '' }}"><a class="page-link" href="/{{$filter}}/{{ slugify( pv($destacados[0]->membresia, 'titulo')) }}/{{ ($index ) * $pagination }}/{{ ($index + 1) * $pagination }}">{{ $index + 1 }}</a></li>
                     @endfor
                         <li class="page-item {{ $final >= ($paginationNumber * $pagination)? 'disabled' : ''}}">
                             <a class="page-link" href="/{{$filter}}/{{ slugify(pv( $destacados[0]->membresia, 'titulo')) }}/{{ $final }}/{{ $final + $pagination}}">Siguiente</a>

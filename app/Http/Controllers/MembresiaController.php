@@ -374,9 +374,10 @@ class MembresiaController extends Controller
                     $constraint->aspectRatio();
                     $constraint->upsize();
                 })->save( public_path_sv() . $_ENV['UPLOAD_FOLDER'].'/membresias-images/thumbs/' . $filename);    
+ 
                 chmod(public_path_sv() . $_ENV['UPLOAD_FOLDER'].'/membresias-images/thumbs/' . $filename, 0755);
                 chmod(public_path_sv() . $_ENV['UPLOAD_FOLDER'].'/membresias-images/' . $filename, 0755);
-                
+
                 //Make POST to API and save image information
                 try {
                     $response = Membresia::setImage($client, $request, Session::get('ACCESS_TOKEN'), $filename, 'thumb', $description );

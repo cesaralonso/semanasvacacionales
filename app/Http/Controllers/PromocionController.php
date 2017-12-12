@@ -198,10 +198,13 @@ class PromocionController extends Controller
                  Image::make($image)->resize(300, null, function ($constraint) {
                      $constraint->aspectRatio();
                      $constraint->upsize();
-                 })->save( public_path('/'.$_ENV['UPLOAD_FOLDER'].'/promociones/thumbs/') . $filename);    
+                 })->save(  public_path_sv() . '/'.$_ENV['UPLOAD_FOLDER'].'/promociones/thumbs/' . $filename);    
                 //  })->save( public_path('/'.$_ENV['UPLOAD_FOLDER'].'/promociones/thumbs/') . $filename);    
-                 
-                 //Make POST to API and save image information
+                
+                chmod(public_path_sv() . $_ENV['UPLOAD_FOLDER'].'/promociones/' . $filename, 0755);
+                chmod(public_path_sv() . $_ENV['UPLOAD_FOLDER'].'/promociones/thumbs/' . $filename, 0755);
+                
+                //Make POST to API and save image information
                  try {
                      $response = Promocion::setImage($client, $request, Session::get('ACCESS_TOKEN'), $filename, 'thumb' );
                      $response = Promocion::setImage($client, $request, Session::get('ACCESS_TOKEN'), $filename, 'original' );
