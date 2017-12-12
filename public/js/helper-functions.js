@@ -237,7 +237,7 @@ function setLocationsOnMap(membresias) {
     for(var x = 0; x < membresias.length; x ++) {
         if( membresias[x].ubicacion != null && membresias[x].ubicacion != undefined)
             locations.push([
-                membresias[x].ubicacion.descripcion,
+                `${membresias[x].titulo}, ${membresias[x].ubicacion.descripcion}` ,
                 membresias[x].ubicacion.lat,
                 membresias[x].ubicacion.lng,
             ]);
@@ -259,8 +259,8 @@ function setLocationsOnMap(membresias) {
 
         google.maps.event.addListener(marker, 'click', (function(marker, i) {
             return function() {
-            infowindow.setContent(locations[i][0]);
-            infowindow.open(map, marker);
+                infowindow.setContent(locations[i][0]);
+                infowindow.open(map, marker);
             }
         })(marker, i));
     }
