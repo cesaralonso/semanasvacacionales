@@ -6,20 +6,32 @@ use Session;
 use Redirect;
 use App\User;
 use App\Promocion;
+use App\Destacado;
+use App\Membresia;
 use Illuminate\Http\Request;
 
 class SuperUserController extends Controller
 {
     function index()
     {
+        // Verify route
+        if (!(Session::has('USER_ID')))
+            return Redirect::to('/');
         try {
-            $response = Promocion::getAll(getClient());
+            $responsePromocion = Promocion::getAll(getClient());
         } catch (RequestException $e) {
             return view('super-user.index');
         }
 
-        $promociones = json_decode($response->getBody()->getContents());
-        return view('super-user.index', compact('promociones'));
+        try {
+            $responseRecomendado = Destacado::getByFilter(getClient(), '[include][membresia]=imagenes');
+        } catch (RequestException $e) {
+            return view('super-user.index');
+        }
+
+        $promociones = json_decode($responsePromocion->getBody()->getContents());
+        $recomendados = json_decode($responseRecomendado->getBody()->getContents());
+        return view('super-user.index', compact(['promociones', 'recomendados']));
     }
 
     function create()
@@ -35,7 +47,6 @@ class SuperUserController extends Controller
             'password'  => 'required'
         ]);
 
-                
         try {
             $response = User::logUser(getClient(), $request);
         } catch (RequestException $e) {
@@ -49,7 +60,6 @@ class SuperUserController extends Controller
                     session()->flash('error', 'El usuario o contraseña no coinciden');                
                 else 
                     session()->flash('error', 'Ocurrio un error al iniciar sesión');                
-            
             return Redirect::to('/login'. '#inicio');     
         }
         $superUser = json_decode($response->getBody()->getContents());
@@ -62,5 +72,53 @@ class SuperUserController extends Controller
             ]);
            return Redirect::to('/controlpanelsv');
         } 
+    }
+
+    function recomendados()
+    {
+        try {
+            $response = Membresia::getByFilter(getClient(), '');
+        } catch (RequestException $e) {
+            return view('super-user.index');
+        }
+
+        $membresias = json_decode($response->getBody()->getContents());
+
+        return view('super-user.recomendados', compact('membresias'));
+    }
+
+    function recomendadosCreate($id)
+    {
+        return view('super-user.recomendados-create', compact('id'));
+    }
+
+    function recomendadosStore(Request $request)
+    {
+        // Verifica si esta membresia ya se encuentra como destacada
+        try {
+            $responseMembresias = Destacado::getAll(getClient());
+        } catch (RequestException $e) {
+            return view('super-user.index');
+        }
+        $destacados = json_decode($responseMembresias->getBody()->getContents());
+        // echo $request->membresiaId;
+        foreach ($destacados as $destacado) {
+            // echo "<br>" . var_dump($destacado->idMembresia);
+            if ($destacado->idMembresia == $request->membresiaId) {
+                session()->flash('error', 'Esta membresia ya se encuentra en recomendados');
+                return Redirect::back();     
+            }
+        }
+
+        try {
+            $response = Destacado::create(getClient(), $request);
+        } catch (RequestException $e) {
+            return view('super-user.index');
+        }
+
+        $result = json_decode($response->getBody()->getContents());
+
+        session()->flash('success', '¡Agregado a recomendados exitosamente!');
+        return Redirect::to('controlpanelsv');
     }
 }

@@ -9,7 +9,6 @@
                 <div class="col-md-7 col-xl-8 ">
                     <h3>Promociones</h3>
                     <hr>
-
                     @foreach( $promociones as $index => $promocion )
                         <div class="card">
                             <div class="row">
@@ -40,6 +39,42 @@
                                 </div>
                             </div>
                         </div>
+                    @endforeach
+                </div>             
+            </div>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-8">
+                    <h3>Recomendados</h3>
+                    <hr>
+                    @foreach( $recomendados as $index => $recomendado )
+                        @if ( isset($recomendado->membresia) )
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        @if ( isset($recomendado->membresia->imagenes[0]) )
+                                            <img src="{{$_ENV['UPLOAD_FOLDER']}}/membresias-images/thumbs/{{ $recomendado->membresia->imagenes[0]->src }}" style="width:100%" class="card-image-mobile w-100">
+                                            <img src="{{$_ENV['UPLOAD_FOLDER']}}/membresias-images/thumbs/{{ $recomendado->membresia->imagenes[0]->src }}" style="width:100%" class="card-image-desktop">
+                                        @else 
+                                            <img src="assets/img/sin-imagen.jpg" class="card-image-desktop">
+                                            <img src="assets/img/sin-imagen.jpg" class="card-image-mobile w-100">
+                                        @endif
+                                    </div>
+                                    <div class="card-image-mobile col-md-8 px-3"> 
+                                        <div class="card-block" style="padding-left: 0; padding-right:0;">
+                                            <h4 class="card-title">{{ pv($recomendado->membresia, 'titulo') }}</h4>
+                                            <p class="card-text"> {{ pv($recomendado->membresia, 'descripcion') }} </p>
+                                        </div>
+                                    </div>
+                                    <div class="card-image-desktop col-md-8 px-3"> 
+                                        <div class="card-block pl-3">
+                                            <h4 class="card-title">{{ pv($recomendado->membresia, 'titulo') }}</h4>
+                                            <p class="card-text">{{ str_limit(pv($recomendado->membresia, 'descripcion'),65 )}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @endif
                     @endforeach
                 </div>
             </div>

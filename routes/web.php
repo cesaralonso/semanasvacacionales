@@ -8,6 +8,9 @@ Route::post('/searchFromHome', 'HomeController@search');
 Route::get('/controlpanelsv', 'SuperUserController@index');
 Route::get('/su-login', 'SuperUserController@create');
 Route::post('/su-login', 'SuperUserController@store');
+Route::get('/su-recomendados', 'SuperUserController@recomendados');
+Route::get('/su-recomendados/create/{id}', 'SuperUserController@recomendadosCreate');
+Route::post('/recomendados-create', 'SuperUserController@recomendadosStore');
 
 // SESSION
 Route::get('/login', 'SessionsController@create');
