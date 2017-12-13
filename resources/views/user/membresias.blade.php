@@ -63,9 +63,13 @@
                             <div class="row mt-1 mb-1" style="border-style: solid;border-width: 1px; border-color: #DEDEDE">
                                 <div class="col-md-5 pl-0">
                                     @if ( App\User::getPrincipalImage(getClient(), $membresia->id) != null)
-                                        <img src="{{$_ENV['UPLOAD_FOLDER']}}/membresias-images/{{ App\User::getPrincipalImage(getClient(), $membresia->id)->src }}" class="card-image-desktop" style="max-width:100%">
+                                        <a href="membresia/tiempo-compartido-en-{{ slugify( pv($membresia, 'localidadNombre') ) }}-{{ slugify( pv($membresia, 'clubNombre') ) }}-{{ slugify( pv($membresia, 'paisNombre') ) }}/{{ pv($membresia, 'id')}}">
+                                            <img src="{{$_ENV['UPLOAD_FOLDER']}}/membresias-images/{{ App\User::getPrincipalImage(getClient(), $membresia->id)->src }}" class="card-image-desktop" style="max-width:100%">
+                                        </a>
                                     @else 
-                                        <img src="assets/img/sin-imagen.jpg" class="card-image-desktop" style="max-width:100%">
+                                        <a href="membresia/tiempo-compartido-en-{{ slugify( pv($membresia, 'localidadNombre') ) }}-{{ slugify( pv($membresia, 'clubNombre') ) }}-{{ slugify( pv($membresia, 'paisNombre') ) }}/{{ pv($membresia, 'id')}}">
+                                            <img src="assets/img/sin-imagen.jpg" class="card-image-desktop" style="max-width:100%">
+                                        </a>                                        
                                     @endif
                                 </div>
                                 <div class="col-md-7">

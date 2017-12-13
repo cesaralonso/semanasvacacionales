@@ -91,7 +91,7 @@
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 search border-gray margin-fixed">
                             <div class="form-group mb-0 mt-1">
-                                <button type="submit" class="btn btn-lg btn-block btn-primary">Buscar</button>
+                                <button type="submit" class="btn btn-lg btn-block btn-primary">Ir a busqueda</button>
                             </div>
                         </div>
                     </div>

@@ -25,8 +25,8 @@ class HomeController extends Controller
         $destacados =[];
         $paises =[];
         try {
-            // Get all membresias
-            $responseMembresias = Membresia::getMembresias(getClient());
+            // Get membresias in playa
+            $responseMembresiasPlaya = Membresia::getByFilter(getClient(), '[where][ubicadoEn]=PLAYA');
             // Get membresias related to tipoInmueble = CABANA
             $responseInmueble = Membresia::getTipoInmueble(getClient(), ('CABANA'));
             // Get destacados
@@ -42,7 +42,7 @@ class HomeController extends Controller
         }
         
         // Get the response body from HTTP Request and parse to Object
-        $membresias = json_decode($responseMembresias->getBody()->getContents());
+        $membresias = json_decode($responseMembresiasPlaya->getBody()->getContents());
         // Get the response body from HTTP Request and parse to Object
         $membresiasInmueble = json_decode($responseInmueble->getBody()->getContents());
         // Get the response body from HTTP Request and parse to Object

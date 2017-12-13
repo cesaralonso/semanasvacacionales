@@ -98,7 +98,7 @@
                                         <i class="fa fa-user-circle"></i> {{ pv($membresia, 'maxPrivacidad') }}  Personas con privacidad
                                     </p>
                                     <p>
-                                        <i class="fa fa-user-circle-o"></i> {{ pv($membresia, 'maxOcupantes') }}Personas máximo
+                                        <i class="fa fa-user-circle-o"></i> {{ pv($membresia, 'maxOcupantes') }} Personas máximo
                                     </p>
                                     <p>
                                         <i class="fa fa-cutlery"></i> {{ pv($membresia, 'tipoCocina') }}
@@ -312,9 +312,11 @@
 
                     <hr width="100%">
                     <div class="col-xs-12 col-lg-12 margin-bottom">
-                        <h2 class="title">
-                            Otros tiempos compartidos relacionados.
-                        </h2>
+                        @if( isset($relacionados[1]) )                        
+                            <h2 class="title">
+                                Otros tiempos compartidos relacionados.
+                            </h2>
+                        @endif
                     </div>
 
                     {{--  <div class="owl-carousel-relacionados owl-theme">  --}}
@@ -326,7 +328,7 @@
                                         @if(isset($relacionado->imagenes[0]))
                                             <img src="{{$_ENV['UPLOAD_FOLDER']}}/membresias-images/{{ $relacionado->imagenes[0]->src }}" alt="imagen" style="width:100%;">
                                         @else
-                                                <img src="assets/img/sin-imagen-land.jpg" alt="imagen" style="width:100%;">
+                                            <img src="assets/img/sin-imagen-land.jpg" alt="imagen" style="width:100%;">
                                         @endif
                                     </div>
                                     <div class="Card__Content">

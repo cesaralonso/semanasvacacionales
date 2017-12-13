@@ -179,7 +179,18 @@ class MembresiaController extends Controller
         $relacionados = json_decode($response->getBody()->getContents());
 
         $personInfo = self::getPersonInfo($membresia->messages);
-        
+
+        // Si no encuentra relacionados, buscará todas las membresias relacionadas sólo por el país
+        if ( !isset($relacionados[1])) {
+            try {
+                $response = Membresia::getByFilter(getClient(), '[where][paisNombre][like]=' . pv($membresia, 'paisNombre'));
+            } catch (RequestException $e) {
+                // In case something went wrong it will redirect to /
+                session()->flash('error', 'Ocurrio un error al acceder a esta membresia, por favor, intente de nuevo.');
+                return view('home.index');
+            }
+            $relacionados = json_decode($response->getBody()->getContents());
+        }
         return view('membresia.show', compact(['membresia', 'isFavorito', 'relacionados', 'personInfo']));
     }
      
@@ -233,8 +244,6 @@ class MembresiaController extends Controller
             return Redirect::to('/');
         }
 
-       
-
         if($hasUnidades) {
             $unidades = json_decode($responseUnidades->getBody()->getContents());
             $unidades = makeAsocArray($unidades, 'nombre', 'descripcion');
@@ -256,8 +265,6 @@ class MembresiaController extends Controller
             $responses[] = 'localidades';
         }
         return view('membresia.edit',  compact($responses));
-            
-
     }
 
     /**

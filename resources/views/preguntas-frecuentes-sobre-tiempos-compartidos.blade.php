@@ -26,14 +26,14 @@
                             <div class="panel-body">
                                 <ul>
                                     <li><strong>Necesito ser  Propietario para poder Alquilar o Comprar un Tiempo Compartido?<br>
-                                    </strong>No. Todos  los listados y Publicaciones en <strong>tiempocompartido.com</strong> están disponibles  al público en general. Bienvenido! <a href="/signup"><u>Registrate aquí</u></a></li>
+                                    </strong>No. Todos  los listados y Publicaciones en <strong>semanasvacacionales.com</strong> están disponibles  al público en general. Bienvenido! <a href="/signup"><u>Registrate aquí</u></a></li>
                                     <li><strong>Porque no puedo ver  los detalles del Propietario en una publicación para contactarlo? <br>
                                     </strong>Se  requiere haber Accesado a tu cuenta. Si aún no la tienes, <a href="/signup"><u>Registra tu cuenta.</u></a> &nbsp;Recibirás un email para confirmar tu  solicitud, Respondelo, regresa y <a href="/signup"><u>Accesa a tu cuenta</u></a> utilizando tus datos de  registro.</li>
                                     <li><strong>Como encuentro  disponibilidad de Tiempos Compartidos?<br>
                                         </strong>Utilizando  nuestro Buscador Avanzado de Propiedades, Selecciona y Filtra los resultados según  tus necesidades: En Venta, En Alquiler. Por Destino, País, Nombre de la  Propiedad, Fecha de Entrada y Salida, Capacidad, Tipo de Hospedaje, Precio,&nbsp; (completar texto con  las características del buscador…) <br>
                                     Todas las Publicaciones: &nbsp;<u>En Alquiler</u>&nbsp; <u>En Venta</u>&nbsp; <u>Promociones Especiales</u>.
                                     <li><strong>Que sucede si no  encuentro disponibilidad la semana o desarrollo que busco?</strong><br>
-                                    Además de la demanda de ciertas fechas y destinos, en <strong>tiempocompartido.com</strong> cada Propietarios  publica independientemente sus membresías en Venta o en Alquiler por lo que  notaras que los listados cambian constantemente.</li>
+                                    Además de la demanda de ciertas fechas y destinos, en <strong>semanasvacacionales.com</strong> cada Propietarios  publica independientemente sus membresías en Venta o en Alquiler por lo que  notaras que los listados cambian constantemente.</li>
                                 </ul>
                             </div>
                             </div>
@@ -56,7 +56,7 @@
                                     <li><strong>Como puedo alquilar un  tiempo compartido de un propietario? </strong><br>
                                     Una vez que seleccionaste una publicación, Contacta al propietario y Negocia  las condiciones más convenientes para ambos. El trato <u>siempre</u> es  realizado 100% entre Tú y el Propietario, sin intermediación. Para tu mayor  confianza recomendamos seleccionar una PROPIEDAD CERTFICADA (link a listado de Prop Certificadas)</li>
                                     <li><strong>Que es una Propiedad  Certificada?</strong><br>
-                                        Son las publicaciones verificadas por el equipo de <strong>tiempocompartido.com</strong> donde hemos corroborado que la  información publicada corresponde al contrato y documentación proporcionada  por el Propietario.
+                                        Son las publicaciones verificadas por el equipo de <strong>semanasvacacionales.com</strong> donde hemos corroborado que la  información publicada corresponde al contrato y documentación proporcionada  por el Propietario.
                                     </li>
                                     <li><strong>Que son los “Avisos  de Ofertas” en las Publicaciones?<br>
                                     </strong>Son notificaciones  enviadas a tu email periódicamente para tus búsquedas de<strong> </strong>fechas determinadas, destino, país o  club.<strong> </strong></li>
@@ -74,7 +74,7 @@
                                     <li><strong>El precio publicado es  negociable? <br>
                                     </strong>La mayoría  de las publicaciones son negociables. Busca por esta indicación debajo del  precio. Pregunta al propietario por el precio más bajo, no tienes nada que  perder!<strong></strong></li>
                                     <li><strong>Porque leo o recibo  respuestas y ofertas de “otro” usuario?<br>
-                                    </strong>Hemos  detectado algunos usuarios utilizando nuestro sistema para promover sus  servicios de reventa. <strong>No respondas a  estas invitaciones</strong>. <strong><em><u>tiempocompartido</u></em></strong><strong><em><u>.com</u></em></strong> <strong><em>no tiene ninguna relación con  estas personas</em></strong>. Estamos tomando medidas para evitar este asunto.  Gracias por tu comprensión.</li>
+                                    </strong>Hemos  detectado algunos usuarios utilizando nuestro sistema para promover sus  servicios de reventa. <strong>No respondas a  estas invitaciones</strong>. <strong><em><u>semanasvacacionales</u></em></strong><strong><em><u>.com</u></em></strong> <strong><em>no tiene ninguna relación con  estas personas</em></strong>. Estamos tomando medidas para evitar este asunto.  Gracias por tu comprensión.</li>
                                     <li><strong>Puedo alquilar solo  unas Noches en lugar de Semanas Completas?<br>
                                     </strong>Los  Tiempos Compartidos son adquiridos generalmente en base a semanas<strong>, </strong>sin embargo si aceptas pagar el costo  de la semana completa pero utilizar menos noches recomendamos contactar al  propietario para que informe al desarrollo.</li>
                                 </ul>
@@ -100,7 +100,7 @@
                                     <li><strong>Como comprar una  membresía?</strong><br>
                                     Selecciona una publicación, Contacta al propietario y acuerda las condiciones  más convenientes para ambos. El trato es realizado 100% entre tú y los  propietarios, sin intermediación.</li>
                                     <li><strong>Que es una Propiedad  Certificada?</strong><br>
-                                        Son las propiedades que han sido Certificadas por tiempocompartido.com que  la información publicada es como lo establece el contrato original firmado por  el propietario.
+                                        Son las propiedades que han sido Certificadas por semanasvacacionales.com que  la información publicada es como lo establece el contrato original firmado por  el propietario.
                                     </li>
                                     <li><strong>Que diferencia existe  entre semanas fijas, flotantes y puntos?</strong><br>
                                         Semanas Fijas: Te da el derecho al mismo alojamiento (Unidad) y fecha cada año.<br>
@@ -111,7 +111,7 @@
                                     <li><strong>Siendo un nuevo  propietario tendré que pagar cuotas de mantenimiento?</strong><br>
                                     Sí. Sin importar si lo adquieres de un desarrollador o en reventa de un  propietario, eres responsable de pagar las cuotas de mantenimiento anual.</li>
                                     <li><strong>Porque leo o recibo  respuestas y ofertas de “otro” usuario?<br>
-                                    </strong>Hemos  detectado algunos usuarios utilizando nuestro sistema para promover sus  servicios de reventa. <strong>No respondas a  estas invitaciones</strong>. <strong><em><u>tiempocompartido</u></em></strong><strong><em><u>.com</u></em></strong> <strong><em>no tiene ninguna relación con  estas personas</em></strong>. Estamos tomando medidas para evitar este asunto.  Gracias por tu comprensión.</li>
+                                    </strong>Hemos  detectado algunos usuarios utilizando nuestro sistema para promover sus  servicios de reventa. <strong>No respondas a  estas invitaciones</strong>. <strong><em><u>semanasvacacionales</u></em></strong><strong><em><u>.com</u></em></strong> <strong><em>no tiene ninguna relación con  estas personas</em></strong>. Estamos tomando medidas para evitar este asunto.  Gracias por tu comprensión.</li>
                                     <li><strong>Puedo probarlo antes  decidir una compra?</strong><br>
                                     <u>Alquila</u> &lt;link&gt; una semana de un Propietario o&nbsp; Aprovecha una <a href="/promociones"><u>Promoción</u></a> para probar y conocer un Resort, se  requiere generalmente aceptar condiciones y asistir a una presentación de  ventas <u>sin compromiso de compra.</u></li>
                                 </ul> 
@@ -134,7 +134,7 @@
                                     Contacta a tu desarrollador y solicítales te informen el costo y condiciones  requeridas para realizar un trámite de cambio de propietario y cesión de  derechos. </li>
                                     <li><strong>Cuánto me cuesta  publicar mi Tiempo Compartido?</strong><br>
                                     Publicar  es un servicio gratuito y exclusivo para Propietarios de Tiempos Compartidos.  Si tienes urgencia en Alquilar o Vender selecciona entre varias opciones que  encontraras entrando a tu cuenta y al costado de tus publicaciones. </li>
-                                    <li><strong>Como publicar mi  membresía en tiempocompartido.com?</strong><br>
+                                    <li><strong>Como publicar mi  membresía en semanasvacacionales.com?</strong><br>
                                     <u>Regístrate</u> &lt;links&gt; y <u>Accede a tu  cuenta</u>. Clic en Publicar membresía. Ten a la mano tu contrato para mayor  precisión en la información de tu publicación. Puedes modificar posteriormente  entrando a tu cuenta, clic en modificar publicación, no olvides salvar los  cambios. </li>
                                     <li><strong>Cuantas membresías  puedo publicar con mi cuenta gratis?</strong><br>
                                     Solo una publicación, ya sea en Venta o en Alquiler. Si deseas publicar  membresías adicionales o eres un agencia de representación consulta nuestros <u>planes  de publicación</u> &lt;link a planes&gt;</li>
@@ -151,9 +151,9 @@
                                     <li><strong>Cuanto tiempo toma  vender mi tiempo compartido?</strong><br>
                                     NADIE puede garantizarte un plazo ya que depende de varios factores como:  ubicación de la propiedad, capacidad, nivel de calidad, amenidades, temporada,  demanda, beneficios y principalmente el precio de venta que solicitas por tu  tiempo compartido. </li>
                                     <li><strong>Como podría reducir  el tiempo para alquilar o vender mi tiempo compartido?</strong><br>
-                                    Reduciendo el precio solicitado, <strong>“Certifica tu  publicación”</strong> o contrata un “plan destacado” para incrementar la  credibilidad y exposición entre los cientos de visitantes diarios a <strong>tiempocompartido.com </strong></li>
+                                    Reduciendo el precio solicitado, <strong>“Certifica tu  publicación”</strong> o contrata un “plan destacado” para incrementar la  credibilidad y exposición entre los cientos de visitantes diarios a <strong>semanasvacacionales.com </strong></li>
                                     <li><strong>Que es una Propiedad  Certificada?<br>
-                                    </strong>Son las  propiedades que han sido verificadas por <strong>tiempocompartido.com</strong> y la información publicada coincide con los datos del contrato original.</li>
+                                    </strong>Son las  propiedades que han sido verificadas por <strong>semanasvacacionales.com</strong> y la información publicada coincide con los datos del contrato original.</li>
                                     <li>Q<strong>ue pasara con mis semanas  depositadas en la compañía de intercambio al vender mi tiempo compartido?<br>
                                     </strong>Tus semanas depositadas con una compañía de intercambio ya no tienen  relación con tu desarrollo por lo que la reventa de tu membresía no te impide  su uso o puedes utilizarlas como incentivo adicional al comprador interesado.</li>
                                     <li><strong>Puedo publicar mis  semanas bono y certificados extras?</strong><br>

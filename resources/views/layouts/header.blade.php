@@ -24,7 +24,7 @@
                     <li><a href="/login" class="navbar-color border-rigth pr-0 pl-0"> Ingresa </a></li>
                     <li><a href="/signup" class="navbar-color border-rigth pr-0 pl-0">Regístrate</a></li>
                 @else
-                    <li><a href="/mi-cuenta" class="navbar-color border-rigth pr-0 pl-0">Mi cuenta <span class="caret"></span></a></li>
+                    <li><a href="/mi-cuenta" class="navbar-color border-rigth pr-0 pl-0"><i class="fa fa-user-circle" style="color: #4a608c"></i> Mi cuenta <span class="caret"></span></a></li>
                     <li><a href="/logout" class="navbar-color"><i class="fa fa-sign-out"></i> Cerrar sesión</a></li>
                 @endif    
             </ul>

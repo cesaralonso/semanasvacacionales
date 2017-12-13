@@ -21,13 +21,13 @@
                     </div>
                     <div class="col margin-bottom">
                         <h3 class="title margin-bottom">
-                            La privacidad de la informacion de los usuarios es muy importante para tiempocompartido.com.
+                            La privacidad de la informacion de los usuarios es muy importante para semanasvacacionales.com.
                         </h3>
                         <p>
                             Es por esa razon que tomamos las precauciones y recaudos para resguardar su informacion, utilizando los mecanismos de seguridad informatica de proteccion de la informacion mas completos y eficaces en la actualidad.
                         </p>
                         <h3 class="title margin-bottom">
-                            Tiempocompartido.com no comparte o vende informacion alguna de los usuarios.
+                            semanasvacacionales.com no comparte o vende informacion alguna de los usuarios.
                         </h3>
                         <p>
                             La informacion recabada solamente es procesada internamente para fines estadisticos.

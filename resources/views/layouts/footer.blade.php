@@ -40,7 +40,7 @@
                 <li><a href="/">Inicio</a></li>
                 <li><a href="/acerca-de-nosotros">Acerca de nosotros</a></li>
                 <li><a href="/busqueda">Búsqueda</a></li>
-                <li><a href="/listados">Listados</a></li>
+                {{--  <li><a href="/listados">Listados</a></li>  --}}
                 <li><a href="/promociones">Promociones</a></li>
                 <li><a href="/preguntas-frecuentes-sobre-tiempos-compartidos">Ayuda</a></li>
                 <li><a href="/condiciones-de-uso">Condiciones de uso</a jky></li>
