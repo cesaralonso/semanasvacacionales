@@ -252,7 +252,11 @@
                                                     <div class="media">
                                                         <div class="media-body">
                                                             <small class="text-grey-400 pull-right">{{ pvsDat($message, 'created') }}</small>
-                                                            <h5 class="media-heading margin-v-5"> {{ pv($personInfo[$index], 'nickname') }} </h5>
+                                                            @if( isset($personInfo[$index]) )
+                                                                <h5 class="media-heading margin-v-5"> {{ pv($personInfo[$index], 'nickname') }} </h5>
+                                                            @else 
+                                                                <h5 class="media-heading margin-v-5"> Usuario </h5>                                                            
+                                                            @endif
                                                             <p class="margin-none">{{ pv($message, 'text') }}</p>
                                                         </div>
                                                     </div>

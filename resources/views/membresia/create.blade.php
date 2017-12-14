@@ -238,7 +238,7 @@
             <label class="col-sm-3 control-label no-padding-right" for="frecSemanasPorAnio"> ¿Cuántas Semanas Por Año? </label>
             <div class="col-sm-7">
             <span class="block input-icon input-icon-right">
-                <input type="number" class="form-control" min="1" max="10" step="1" placeholder="" id="frecSemanasPorAnio" name="frecSemanasPorAnio" min="1" max="15" />
+                <input type="number" class="form-control" min="1" max="52" step="1" placeholder="" id="frecSemanasPorAnio" name="frecSemanasPorAnio" min="1" max="15" />
                 </span>
             </div>
         </div>

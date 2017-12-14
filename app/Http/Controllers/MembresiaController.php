@@ -179,7 +179,6 @@ class MembresiaController extends Controller
         $relacionados = json_decode($response->getBody()->getContents());
 
         $personInfo = self::getPersonInfo($membresia->messages);
-
         // Si no encuentra relacionados, buscará todas las membresias relacionadas sólo por el país
         if ( !isset($relacionados[1])) {
             try {
