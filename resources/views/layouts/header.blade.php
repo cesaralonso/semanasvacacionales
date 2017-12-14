@@ -15,9 +15,9 @@
         @else
             <ul>
                 <li><a href="/busqueda" class="navbar-color border-rigth pr-0 pl-0"><i  class="fa fa-search"></i> Búsqueda</a></li>
-                <li><a href="/recomendados/tiempos-compartidos-recomendados/0/3" class="navbar-color border-rigth pr-0 pl-0"><i  class="fa fa-thumbs-o-up"></i> Recomendados</a></li>
-                <li><a href="/ventas/tiempos-compartidos-en-venta/0/3" class="navbar-color border-rigth pr-0 pl-0"><i  class="fa fa-money"></i> Venta</a></li>
-                <li><a href="/rentas/tiempos-compartidos-en-renta/0/3" class="navbar-color border-rigth pr-0 pl-0"><i  class="fa fa-ticket"></i> Renta</a></li>
+                <li><a href="/recomendados/tiempos-compartidos-recomendados/0/15" class="navbar-color border-rigth pr-0 pl-0"><i  class="fa fa-thumbs-o-up"></i> Recomendados</a></li>
+                <li><a href="/ventas/tiempos-compartidos-en-venta/0/15" class="navbar-color border-rigth pr-0 pl-0"><i  class="fa fa-money"></i> Venta</a></li>
+                <li><a href="/rentas/tiempos-compartidos-en-renta/0/15" class="navbar-color border-rigth pr-0 pl-0"><i  class="fa fa-ticket"></i> Renta</a></li>
                 <li><a href="/promociones" class="navbar-color border-rigth pr-0 pl-0"><i  class="fa fa-star"></i> Promociones</a></li>
                 {{--  <li><a href="/listados" class="border-rigth pr-0 pl-0"><i  class="fa fa-list"></i> Listados</a></li>  --}}
                 @if(!Session::has('ACCESS_TOKEN'))
@@ -56,8 +56,8 @@
                             Ahorra en el costo de tus próximas vacaciones familiares.
                             Conoce las ventajas y experiencias de los mismos propietarios y sus familias.
                         </ul>
-                        <a class="hidden-sm-down btn btn-lg btn-primary mt-1" href="/rentas/tiempos-compartidos-en-renta/0/3" role="button">Semanas Vacacionales en Alquiler</a>
-                        <a class="hidden-md-up btn btn-lg btn-primary mt-1" style="font-size: .9rem;" href="/rentas/tiempos-compartidos-en-renta/0/3" role="button">Semanas Vacacionales en Alquiler</a>
+                        <a class="hidden-sm-down btn btn-lg btn-primary mt-1" href="/rentas/tiempos-compartidos-en-renta/0/15" role="button">Semanas Vacacionales en Alquiler</a>
+                        <a class="hidden-md-up btn btn-lg btn-primary mt-1" style="font-size: .9rem;" href="/rentas/tiempos-compartidos-en-renta/0/15" role="button">Semanas Vacacionales en Alquiler</a>
                     {{--  </div>                
                 </div>                  --}}
             </div>
@@ -75,8 +75,8 @@
                 <li>Sin intermediación ni pagar comisiones. Trato directo con los propietarios.</li>
                 <li>Negocia el mejor precio.</li>
               </ul> 
-              <a class="hidden-sm-down btn btn-lg btn-primary mt-1" href="/ventas/tiempos-compartidos-en-venta/0/3" role="button">Semanas Vacacionales en Venta</a>
-              <a class="hidden-md-up btn btn-lg btn-primary mt-1" style="font-size: .9rem;"  href="/ventas/tiempos-compartidos-en-venta/0/3" role="button">Semanas Vacacionales en Venta</a>
+              <a class="hidden-sm-down btn btn-lg btn-primary mt-1" href="/ventas/tiempos-compartidos-en-venta/0/15" role="button">Semanas Vacacionales en Venta</a>
+              <a class="hidden-md-up btn btn-lg btn-primary mt-1" style="font-size: .9rem;"  href="/ventas/tiempos-compartidos-en-venta/0/15" role="button">Semanas Vacacionales en Venta</a>
               
             </div>
           </div>

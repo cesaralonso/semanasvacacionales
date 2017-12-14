@@ -16,7 +16,7 @@
                 <div class="list-group text-center" style="box-shadow: 10px 10px 5px #888888;">
                     @foreach($membresias as $membresia)
                         <a class="list-group-item list-group-item-action categoria-list" href="/su-recomendados/create/{{$membresia->id}}" class="list-group-item">
-                            {{ $membresia->titulo }}
+                            {{ $membresia->titulo }} -  {{ $membresia->id}}
                         </a>
                     @endforeach
                 </div>

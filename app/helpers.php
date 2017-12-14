@@ -6,6 +6,7 @@ function getClient()
 {
     $client = new GuzzleHttp\Client([
         // Base URI is used with relative requests
+        // 'base_uri' => 'http://localhost:3000/api/',
         'base_uri' => $_ENV['END_POINT'],
     ]);
     return $client;

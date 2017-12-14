@@ -38,6 +38,9 @@ class DestacadoSearchController extends Controller
         }
 
         $destacados = json_decode($response->getBody()->getContents());
+        // Si hay un problema de destacados, puede ser que la membresia no
+        // exista pero el registro en destacados si y es por eso que no esta trayendo
+        // la membresia porque ya no existe y marca un error
         // return var_dump($destacados);
         return view('recomendados.index', compact(['recomendados', 'destacados', 'paginationNumber', 'pagination', 'count', 'init', 'final', 'filter']));
     }

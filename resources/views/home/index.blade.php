@@ -10,19 +10,21 @@
                         <p>Experimenta una diferente forma de vacacionar, disfruta de un tiempo compartido en los clubes mas importantes del mundo haciendo trato directo con los propietarios, sin intermediación, consiguiendo los mejores precios, ¿que esperas?, ¡Comienza el Viaje Ahora!.</p>
                     </blockquote>
                 </div>
-                <div class="col-md-4 col-xl-3 wow bounceIn text-center" data-wow-delay=".6s">
-                    <div class="Card__Image">
-                        {{--  <img src="promociones/thumbs/{{promocionDestacada[0]->imagenes[0]->src}}" alt="imagen">  --}}
-                        <img src="{{ isset($promocionDestacada[0]->imagenes[0]->src) ?  $_ENV['UPLOAD_FOLDER'].'/promociones/thumbs/' . $promocionDestacada[0]->imagenes[0]->src : 'assets/img/sin-imagen-land.jpg' }}" alt="imagen"> 
-                        
+                @if( isset($promocionDestacada[0]))
+                    <div class="col-md-4 col-xl-3 wow bounceIn text-center" data-wow-delay=".6s">
+                        <div class="Card__Image">
+                            {{--  <img src="promociones/thumbs/{{promocionDestacada[0]->imagenes[0]->src}}" alt="imagen">  --}}
+                            <img src="{{ isset($promocionDestacada[0]->imagenes[0]->src) ?  $_ENV['UPLOAD_FOLDER'].'/promociones/thumbs/' . $promocionDestacada[0]->imagenes[0]->src : 'assets/img/sin-imagen-land.jpg' }}" alt="imagen"> 
+                            
+                        </div>
+                        <div class="Footer__Content">
+                            <p class="lead">
+                                {{ $promocionDestacada[0]->titulo }}
+                            </p>
+                            <a href="/promociones" class="btn btn-success">Ver más promociones</a href="/promociones">
+                        </div>
                     </div>
-                    <div class="Footer__Content">
-                        <p class="lead">
-                            {{ $promocionDestacada[0]->titulo }}
-                        </p>
-                        <a href="/promociones" class="btn btn-success">Ver más promociones</a href="/promociones">
-                    </div>
-                </div>
+                @endif
             </div>
         </div>
     </section>
@@ -145,7 +147,8 @@
         <div class="Latest nature padding-row">
             <div class="container">
                 <h3 class="Latest__title pb-1 text-center tiempo-title">
-                    ¿Lo mejor del verano? ¡Es momento de playa!
+                    {{--  ¿Lo mejor del verano? ¡Es momento de playa!  --}}
+                    ¡Lo más nuevo!
                 </h3>
                 <div class="tiempo-line-bottom-container margin-bottom">
                     <span class="tiempo-line-bottom"></span>
@@ -182,7 +185,7 @@
             </div>
         </div>
 
-        <div class="Latest padding-row">
+        {{--  <div class="Latest padding-row">
             <div class="container">
                 <h3 class="Latest__title pb-1 text-center tiempo-title">
                     ¿Buscas un momento de relajación? ¡Una cabaña en el bosque!
@@ -222,7 +225,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>  --}}
         <div class="About padding-row">
             <div class="container text-center">
                 <div class="About__Content">

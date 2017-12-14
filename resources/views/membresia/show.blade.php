@@ -323,14 +323,13 @@
                         @endif
                     </div>
 
-                    {{--  <div class="owl-carousel-relacionados owl-theme">  --}}
                         @if( isset($relacionados) )
                             @foreach( $relacionados as $relacionado )
                             @if( !($relacionado->id == $membresia->id) )
                                 <div class="Card col-md-4">
                                     <div class="Card__Image">
                                         @if(isset($relacionado->imagenes[0]))
-                                            <img src="{{$_ENV['UPLOAD_FOLDER']}}/membresias-images/{{ $relacionado->imagenes[0]->src }}" alt="imagen" style="width:100%;">
+                                            <img src="{{$_ENV['UPLOAD_FOLDER']}}/membresias-images/thumbs/{{ $relacionado->imagenes[0]->src }}" alt="imagen" style="width:100%;">
                                         @else
                                             <img src="assets/img/sin-imagen-land.jpg" alt="imagen" style="width:100%;">
                                         @endif
@@ -349,7 +348,6 @@
                             @endif                                
                             @endforeach
                         @endif
-                    {{--  </div>  --}}
                 </div>
             </div>
         </div>

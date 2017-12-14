@@ -26,7 +26,11 @@ class HomeController extends Controller
         $paises =[];
         try {
             // Get membresias in playa
-            $responseMembresiasPlaya = Membresia::getByFilter(getClient(), '[where][ubicadoEn]=PLAYA');
+            // README
+            // Cambiado temporalmente por membresias en venta
+            // $responseMembresiasPlaya = Membresia::getByFilter(getClient(), '[where][ubicadoEn]=PLAYA');
+            $responseMembresiasPlaya = Membresia::getByFilter(getClient(), '[limit]=12');
+
             // Get membresias related to tipoInmueble = CABANA
             $responseInmueble = Membresia::getTipoInmueble(getClient(), ('CABANA'));
             // Get destacados
